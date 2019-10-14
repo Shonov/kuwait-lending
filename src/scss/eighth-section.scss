@@ -1,0 +1,58 @@
+.section--eighth {
+  background: url("https://kuwait.nexfit.com/img/background_eighth.png") no-repeat;
+  background-position: unset !important;
+}
+
+.section-request {
+  min-height: 500px;
+  justify-content: flex-end;
+  padding: 50px 0 40px 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 41px;
+    font-family: "Micra" , sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  &__addition {
+    font-family: "Alergia Regular" , sans-serif;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    max-width: 250px;
+    font-size: 29.03px;
+    font-family: "Alergia Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.787;
+    padding: 10px;
+    background-color: rgb(227, 29, 29);
+    box-shadow: 0 0 30px 10px #e31d1d;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__logo {
+    margin-top: 40px;
+  }
+
+  .section--eighth {
+    background-position: 35% !important;
+  }
+}

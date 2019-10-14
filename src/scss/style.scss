@@ -1,0 +1,1194 @@
+$bebasSansFont: 'Bebas Neue', sans-serif;
+$lintelSansFont: Lintel, sans-serif;
+
+@import "fonts";
+@import "second-section";
+@import "third-section";
+@import "fourth-section";
+@import "fifth-section";
+@import "sixth-section";
+@import "seventh-section";
+@import "eighth-section";
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+input {
+  appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  font-family: "Alergia Regular", sans-serif;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    flex: 1;
+    display: flex;
+    max-width: 1322px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-family: "Micra", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+
+    &--white {
+      color: #fff;
+    }
+  }
+
+  &__devider {
+    width: 70px;
+    height: 6px;
+    background: #000;
+    margin-top: 20px;
+
+    &--white {
+      background: #fff;
+    }
+  }
+
+  &--first {
+    background-image: url('//kuwait.nexfit.com/img/background_first.png');
+  }
+
+  &--second {
+    background-image: url('//kuwait.nexfit.com/img/background_second.png');
+  }
+
+  &-offer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__header {
+      margin-top: 50px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__main {
+      margin-top: 30px;
+      margin-bottom: 0;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__left-column {
+      display: flex;
+      flex: 1.1;
+    }
+
+    &__right-column {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+.header {
+  &__language-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-lang {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__logo-img {
+    max-width: 312px;
+  }
+
+  &__instagram-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__instagram-logo {
+    width: 23px;
+    height: 23px;
+    margin-top: 3px;
+  }
+
+  &__instagram-account {
+    margin-left: 10px;
+    color: white;
+    font-family: "Alergia Regular", sans-serif;
+    font-size: 25px;
+  }
+
+  &__second-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+.text {
+  &-red {
+    color: #ed1515;
+    display: inline-block;
+  }
+
+  &-bold {
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: "Micra", sans-serif;
+    font-size: 54px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    width: calc(100% + 70px);
+  }
+
+  &__description {
+    font-family: "Alergia Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-size: 33px;
+    margin-top: 20px;
+    width: calc(100% + 70px);
+  }
+
+  &__bullets {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  &__bullet {
+    display: flex;
+    padding: 0px 10px 0 0;
+    font-family: $lintelSansFont;
+    font-size: 25px;
+    flex: 1;
+    color: white;
+  }
+
+  &__bullet-image {
+    max-width: 21px;
+    max-height: 21px;
+    margin: 0 10px 0 0;
+  }
+
+  &__book-addition {
+    margin: 20px 0;
+    font-size: 26.472px;
+    font-weight: 600;
+    font-family: "Lintel", sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &__book-session {
+    margin-top: 30px;
+    font-family: $lintelSansFont;
+    font-weight: bold;
+    font-size: 26px;
+    border: 3px solid #ed1515;
+    padding: 20px;
+    position: relative;
+  }
+
+  &__limited-offer {
+    max-width: 166px;
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    right: -80px;
+  }
+
+  &__text {
+    font-weight: bolder;
+  }
+
+  &__limited-offer-description {
+    &--center {
+      font-family: "Alergia Bold", sans-serif;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: rgba(8, 19, 76, 0.839);
+  border-radius: 0 20px 0 20px;
+  width: 77%;
+
+  &__title {
+    font-size: 27.754px;
+    font-family: "Alergia Bold", sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &::placeholder {
+      color: #a1a1a1;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 10px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  &__submit {
+    width: 60%;
+    background: #ed1515;
+    border: none;
+    border-bottom: 5px solid #a71818;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Alergia Regular", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 5px solid transparent;
+    }
+  }
+}
+
+.parallax {
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--first {
+    background-image: url("//kuwait.nexfit.com/img/parallax_first.png");
+  }
+
+  &--second {
+    background-image: url("//kuwait.nexfit.com/img/parallax_second.png");
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 50px 0;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+
+  &__franchise-link {
+    color: #fff;
+    margin: -20px 0 20px 0;
+    text-decoration: underline !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  div.wpcf7 {
+    width: 100%;
+  }
+
+  .pc-hidden {
+    display: block;
+  }
+
+  .mobile-hidden {
+    display:  none;
+  }
+
+  .language-selector {
+    position: relative !important;
+    margin-top: 0 !important;
+
+    &__item {
+      padding: 7px !important;
+      border-radius: 0 0 10px 10px;
+      min-width: unset !important;
+    }
+  }
+
+  .logo-with-language {
+    width: unset !important;
+    position: relative !important;
+  }
+
+  .section--first {
+    background-image: url(//kuwait.nexfit.com/img/background_first_mobile.png);
+    background-size: 100% 80%;
+    background-position: unset;
+    background-color: #f4f5f1;
+  }
+
+  .section {
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+  }
+
+  .section-offer {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__main {
+      flex-direction: column;
+    }
+
+    &__main,
+    &__right-column {
+      width: 100%;
+    }
+  }
+
+  .header {
+    position: relative;
+    flex-direction: row;
+    padding: 0 20px;
+    margin-top: 20px;
+
+    &__logo-img {
+      width: 100%;
+      max-width: 220px;
+    }
+
+    &__logo-lang {
+      justify-content: space-between;
+      margin: 20px;
+      width: 90%;
+    }
+
+    &__instagram-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: -80px;
+    }
+  }
+
+  .language-selector {
+    &__country {
+      margin: 0 5px !important;
+    }
+  }
+
+  .offer {
+    color: white;
+
+    &__title {
+      display: none;
+      font-size: 60px;
+      text-align: center;
+    }
+
+    &__description {
+      margin-top: 90px;
+      font-size: 27px;
+      padding: 0 40px;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__bullets {
+      flex-direction: column;
+      padding: 30px 30px 0 30px;
+      margin-top: 360px;
+    }
+
+    &__bullet {
+      margin-bottom: 20px;
+    }
+
+    &__book-session {
+      padding: 20px 20px 45px 20px;
+      margin: 10px 10px 0 10px;
+    }
+
+    &__book-addition {
+      color: white;
+      text-align: center;
+      padding: 0 5px;
+    }
+
+    &__limited-offer {
+      max-width: 133px;
+      top: -63px;
+      right: -22px;
+    }
+
+    &__limited-offer-description {
+      &--center {
+        font-size: 23px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 18px;
+    border-width: 10px;
+    border-color: rgb(227, 29, 29);
+    border-style: solid;
+    background-color: #f5f6f2;
+
+    &__title {
+      font-size: 23.692px;
+      color: #E31D1D;
+      text-align: center;
+    }
+
+    &__input {
+      text-align: center;
+      font-style: italic;
+      box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.56);
+      font-size: 20px;
+
+      &::placeholder {
+        font-size: 20px !important;
+        color: rgba(0, 0, 0, 0.502);
+        font-style: italic;
+        text-align: center;
+      }
+    }
+
+    &__submit {
+      font-size: 20px;
+      width: 75%;
+    }
+  }
+
+  .section-transform {
+    text-align: center;
+
+    &__image-container {
+      padding: 10px 30px;
+    }
+
+    &__images {
+      flex-direction: column;
+    }
+  }
+
+  .section-helping {
+    &__images {
+      flex-direction: column;
+    }
+
+    &__image {
+      max-width: 60%;
+    }
+
+    &__title {
+      width: 95%;
+    }
+
+    &__image-container {
+      margin: 0 0 30px 0 !important;
+    }
+  }
+
+  .section-pluses__title {
+    width: 95%;
+  }
+
+  .pluses {
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    &--mobile {
+      margin: 50px 0 -50px 0 !important;
+    }
+
+    &__video {
+      width: 100%;
+    }
+
+    &__pc-container {
+      display: none;
+    }
+
+    &__mobile-container {
+      display: flex !important;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      max-width: unset !important;
+    }
+
+    &__container {
+      display: none;
+    }
+  }
+
+  .plus {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px !important;
+
+    & {
+      flex: 1 1 50%;
+      width: 50%;
+    }
+
+    &__image {
+      margin: 0 0 10px !important;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .section-feature {
+    &__container {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      width: 95%;
+    }
+  }
+
+  .feature {
+    margin: 20px 0 0 !important;
+
+    &__container {
+      margin-top: -2px;
+    }
+  }
+
+  .arrows-container {
+    display: flex;
+  }
+
+  .section-request {
+    padding: 40px 0 20px 0;
+
+    &__container {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__addition {
+      padding: 0 8px;
+      font-size: 27px;
+      font-family: "Alergia" , sans-serif;
+      font-weight: bold;
+    }
+
+    &__link {
+      padding: 20px 40px;
+    }
+  }
+
+  .parallax {
+    background-attachment: inherit;
+    height: 80vh;
+
+    &--first {
+      background-image: url("//kuwait.nexfit.com/img/parallax_first-mobile.png");
+    }
+
+    &--second {
+      background-image: url("//kuwait.nexfit.com/img/parallax_second-mobile.png");
+    }
+  }
+
+  .section--eighth {
+    background-position: 35% !important;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section__title {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 992px) {
+  .section--first {
+    background-size: cover;
+    background-position-y: 40%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .pc-hidden {
+    display: none;
+  }
+
+  .mobile-hidden {
+    display:  block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .offer__limited-offer {
+    max-width: 100px;
+    top: -50px;
+    right: -22px;
+  }
+}
+
+input {
+  appearance: none;
+}
+
+.logo-with-language {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.language-selector {
+  margin-top: 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbd8d7;
+    position: absolute;
+    border-top: 1px solid #c4c2c1;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    visibility: hidden;
+    padding: 7px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__item--selected {
+    border-top: none;
+    background-color: transparent;
+    position: relative;
+    visibility: visible;
+  }
+
+  &__country {
+    height: 34px;
+    margin: 0 5px;
+  }
+
+  &__arrow {
+    display: none;
+    height: 7px;
+    margin-left: 5px;
+    transform: rotate(180deg);
+  }
+}
+
+.language-selector__item--selected .language-selector__arrow {
+  display: block;
+}
+
+.language-selector--open .language-selector__arrow {
+  transform: rotate(360deg);
+}
+
+.language-selector--open .language-selector__item {
+  visibility: visible;
+}
+
+
+.body-ar {
+  direction: rtl;
+  font-family: "Dubai", sans-serif;
+
+  .section {
+    &__title {
+      font-family: "Dubai Medium", sans-serif;
+      font-size: 55px;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+  }
+
+  .header {
+    direction: ltr;
+  }
+
+  .offer {
+    &__title {
+      font-family: "Dubai Medium", sans-serif;
+      font-style: normal;
+      line-height: 1.1;
+      font-size: 87px;
+    }
+
+    &__description {
+      font-family: "Dubai Regular", sans-serif;
+      font-size: 37px;
+      margin-top: 40px;
+    }
+
+    &__bullet {
+      font-family: "Dubai Regular", sans-serif;
+      font-size: 25px;
+      line-height: 1.2;
+      padding: 0 0 0 10px;
+    }
+
+    &__book-addition {
+      font-family: "Dubai Regular", sans-serif;
+      font-size: 25px;
+    }
+
+    &__bullet-image {
+      margin: 0 0 0 10px;
+    }
+
+    &__limited-offer-description {
+      &--main {
+        font-family: "Dubai Medium", sans-serif;
+      }
+
+      &--path {
+        font-family: "Dubai Regular", sans-serif;
+      }
+    }
+  }
+
+  .form {
+    &__title {
+      text-align: center;
+      font-family: "Dubai Light", sans-serif;
+    }
+
+    &__input {
+      text-align: right;
+
+      &[type="tel"] {
+        direction: ltr;
+      }
+
+      &:not([type="tel"]) {
+        direction: rtl;
+      }
+
+      &::placeholder {
+        font-family: "Dubai Regular", sans-serif;
+      }
+    }
+
+    &__submit {
+      font-family: "Dubai Bold", sans-serif;
+    }
+  }
+
+  .section-transform {
+    &__cta {
+      font-family: "Dubai Medium", sans-serif;
+    }
+
+    &__motivation {
+      font-size: 50px;
+      font-family: "Dubai Medium", sans-serif;
+    }
+  }
+  .section-helping {
+    &__images {
+      direction: ltr;
+    }
+
+    &__alt {
+      font-size: 25px;
+      font-family: "Dubai Regular", sans-serif;
+    }
+  }
+
+  .pluses {
+    width: 100%;
+
+    &__container {
+      margin-left: 0;
+      margin-right: 50px;
+
+      &:nth-child(2) {
+        margin-right: 80px;
+      }
+    }
+  }
+
+  .plus {
+    &__title {
+      text-align: right;
+      font-family: "Dubai Regular", sans-serif;
+      font-size: 26px;
+    }
+
+    .plus__image {
+      width: 31px;
+      height: 31px;
+      margin-left: 20px;
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
+
+  .section-feature__container {
+    direction: ltr;
+  }
+
+  .feature {
+    &__title {
+      text-align: right;
+      font-size: 35px;
+      font-family: "Dubai Medium", sans-serif;
+      font-style: normal;
+    }
+
+    &__description {
+      font-size: 25px;
+      font-family: "Dubai Regular", sans-serif;
+      line-height: 1.2;
+      font-style: normal;
+
+      &--v2 {
+        border: none;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .feature__description {
+    direction: rtl;
+    text-align: unset;
+  }
+
+  .section-request {
+    direction: ltr;
+
+    &__container {
+      text-align: right;
+      margin-right: 50px;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+    }
+
+    &__title {
+      font-size: 60px;
+      font-family: "Dubai Medium", sans-serif;
+      font-style: normal;
+      text-align: right;
+      line-height: 1.8;
+    }
+
+    &__addition {
+      font-size: 30px;
+      font-family: "Dubai Medium", sans-serif;
+      font-style: normal;
+    }
+
+    &__link {
+      font-style: normal;
+      font-size: 30px;
+      font-family: "Dubai Medium", sans-serif;
+      min-width: 200px;
+    }
+  }
+
+  .footer {
+    &__franchise-link {
+      font-size: 20px;
+      font-family: "Dubai Regular", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    &__copyright {
+      direction: ltr;
+      font-size: 20px;
+      font-family: "Dubai Regular", sans-serif;
+    }
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(214, 213, 213, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  z-index: 100;
+
+  &__img {
+    width: 100px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .offer {
+    &__title {
+      padding: 0 10px;
+      font-size: 48px;
+      text-align: center;
+    }
+  }
+
+  .form {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__input {
+
+      &::placeholder {
+        padding-right: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .offer {
+    &__limited-offer-legend {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__limited-offer {
+      min-width: 100%;
+      margin: auto;
+      position: unset;
+    }
+  }
+
+  .body-ar {
+    .offer {
+      &__description {
+        font-size: 35px;
+        margin-top: 70px;
+      }
+
+      &__limited-offer-description {
+        &--main {
+          margin-bottom: 20px;
+          font-size: 28px;
+        }
+
+        &--path {
+          font-size: 28px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .form {
+      &__title {
+        font-size: 35px;
+      }
+
+      &__input {
+        padding-right: 20px;
+
+        &::placeholder {
+          text-align: right;
+          font-style: normal;
+          font-size: 23px;
+        }
+      }
+    }
+
+    .plus {
+      &__title {
+        text-align: center !important;
+        font-size: 26px;
+      }
+    }
+      .pluses {
+      &__container {
+        padding: 0 10px;
+        margin-right: 0;
+      }
+    }
+
+    .section-helping {
+      &__alt {
+        font-size: 34px;
+      }
+    }
+
+    .section-feature {
+      &__title {
+        font-size: 34px;
+      }
+    }
+
+    .section--eighth {
+      margin-top: 0;
+    }
+
+    .section-request {
+      &__title {
+        font-size: 40px;
+        text-align: center;
+        width: 85%;
+      }
+
+      &__container {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+
+      &__addition {
+        margin-top: 40px;
+        font-size: 35px;
+        font-weight: normal;
+        width: 85%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .section-transform {
+    &__image-container {
+      cursor: pointer;
+      padding: 0 10px;
+
+      &:hover {
+        transform:scale(1.5)translateY(-10%);
+        z-index:10;
+      }
+
+      &:nth-of-type(1):hover{
+        transform:translateX(70px)translateY(-10%)scale(1.5);
+      }
+
+      &:nth-of-type(4):hover{
+        transform:translateX(-70px)translateY(-10%)scale(1.5);
+      }
+    }
+  }
+
+  .body-ar {
+    .offer__limited-offer {
+      max-width: 166px;
+      position: absolute;
+      right: 91%;
+    }
+
+    .offer__limited-offer-description {
+      padding-left: 50px;
+    }
+  }
+}
+
+.indent {
+  font-family: sans-serif !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .body-ar .section-request__title {
+    font-size: 53px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .body-ar .section-request__title {
+    font-size: 64px;
+  }
+}

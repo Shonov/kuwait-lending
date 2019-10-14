@@ -1,0 +1,115 @@
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='shortcut icon' href='//kuwait.nexfit.com/img/favicon.png' type='image/x-icon')
+        title EMS Personal Fitness Training - Trial Session | Nexfit Kuwait
+    <!-- Google Tag Manager -->
+    script.
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WJBM8SL');
+    <!-- End Google Tag Manager -->
+body
+    <!-- Google Tag Manager (noscript) -->
+    noscript
+        iframe(src="//www.googletagmanager.com/ns.html?id=GTM-WJBM8SL" height="0" width="0" style="display:none;visibility:hidden")
+    <!-- End Google Tag Manager (noscript) -->
+
+    .loader
+        img(src="//kuwait.nexfit.com/img/loader.gif").loader__img
+    .section.section--first
+        .section__content.section-offer
+            .section-offer__header.header
+                a.header__logo(href='/')
+                    img.header__logo-img(src='//kuwait.nexfit.com/img/logo.png')
+
+                .header__language-container
+                    a.header__instagram-container(href='//www.instagram.com/nexfitkw' target="_blank")
+                        img.header__instagram-logo(src='//kuwait.nexfit.com/img/homeinsta.png')
+                        .header__instagram-account @nexfitkw
+                    .logo-with-language
+                        .language-selector
+                            .language-selector__item.language-selector__item-en.language-selector__item--selected
+                                img.language-selector__country(src="//kuwait.nexfit.com/img/united-kingdom.svg" alt="")
+                                img.language-selector__arrow(src="//kuwait.nexfit.com/img/arrow-point-to-right.png" alt="")
+                            .language-selector__item.language-selector__item-ae.language-selector__item
+                                img.language-selector__country(src="//kuwait.nexfit.com/img/kuwait.svg" alt="")
+                                img.language-selector__arrow(src="//kuwait.nexfit.com/img/arrow-point-to-right.png" alt="")
+
+            .section-offer__main
+                .section-offer__left-column.offer
+                    .offer__title GET IN SHAPE
+                        br
+                        | AND BE HEALTHY
+                    .offer__description TRANSFORM YOUR
+                        .text-red.text-bold &nbsp;BODY&nbsp;
+                        | TO BECOME
+                        .text-red.text-bold &nbsp;FIT&nbsp;
+                        | AND&ensp;
+                        .text-red.text-bold HEALTHY&nbsp;
+                        | WITH JUST
+                        .text-red.text-bold &nbsp;20 MINUTES&nbsp;
+                        | PER WEEK
+
+                    .offer__bullets
+                        .offer__bullet.offer__bullet-first
+                            img(src="//kuwait.nexfit.com/img/red-curcle.png").offer__bullet-image
+                            | Lose Weight &amp; Burn Fats Faster Than Ever
+                        .offer__bullet.offer__bullet-second
+                            img(src="//kuwait.nexfit.com/img/red-curcle.png").offer__bullet-image
+                            | High-Intensity, all muscle group workout
+                        .offer__bullet.offer__bullet-third
+                            img(src="//kuwait.nexfit.com/img/red-curcle.png").offer__bullet-image
+                            | Build Strength &amp; Endurance
+
+
+                    fieldset.offer__book-session
+                        legend.offer__limited-offer-legend
+                            img.offer__limited-offer.pc-hidden(src="//kuwait.nexfit.com/img/mobile-limited-offer.png")
+                        img.offer__limited-offer.mobile-hidden(src="//kuwait.nexfit.com/img/limited-offer.png")
+                        .offer__limited-offer-description
+                            .offer__limited-offer-description--center BOOK YOUR TRIAL SESSION FOR&nbsp;
+                                |
+                                .text-red.text-bold KD 7 ONLY,&nbsp;
+                                | INSTEAD OF KD 25
+                            .offer__text
+                                .text-red.text-bold + Get 45%&nbsp;
+                                | discount on membership
+                            .offer__text
+                                .text-red.text-bold + Free 2&nbsp;
+                                | months freeze option
+                            .offer__text
+                                .text-red.text-bold + Free EMS&nbsp;
+                                | Fitness sportswear
+                            .offer__text
+                                .text-red.text-bold + 4 free sessions&nbsp;
+                                | worth for family/friends
+                    div.offer__book-addition Offer valid for first 100 customers only
+
+                .section-offer__right-column
+                    form.form
+                        .form__title CLAIM LIMITED
+                            br
+                            | TIME OFFER
+                        input.form__input(type="text", placeholder="Your Name", name="name", required="required" id="for_make_active")
+                        input.form__input(type="email", placeholder="Your Email", name="email", required="required")
+                        input.form__input(type="tel", placeholder="Contact Number", name="phone", required="required")
+                        input.form__input(type="hidden", name="language-type")
+                        input.form__submit(type="submit", value="Claim The Offer")
+
+    include ../includes/second-section
+    include ../includes/third-section
+    include ../includes/fourth-section
+    include ../includes/fifth-section
+    include ../includes/sixth-section
+    include ../includes/seventh-section
+    include ../includes/eighth-section
+
+    footer.footer
+        //a(href="/franchise/").footer__franchise-link Become a franchise
+        .footer__copyright Copyright © <?php echo date(Y); ?> NEXFIT
+
